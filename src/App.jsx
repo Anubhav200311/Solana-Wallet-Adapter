@@ -5,7 +5,7 @@ import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react
 // import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets'; // Optional
 import {
     WalletModalProvider,
-    WalletConnectButton,
+    // WalletConnectButton,
     WalletDisconnectButton,
     WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
@@ -15,6 +15,7 @@ import {
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { AirDrop } from './AirDrop';  // Ensure that this import exists
 import { ShowSolBalance } from './GetBalance';  // Ensure that this import exists
+import { SignMessage } from './SignMessage';  // Ensure that this import exists
 
 function App() {
     // Define the Solana network (you could use WalletAdapterNetwork.Mainnet for production)
@@ -39,6 +40,7 @@ function App() {
 
                     <AirDrop></AirDrop>
                     <ShowSolBalance></ShowSolBalance>
+                    <SignMessage></SignMessage>
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
