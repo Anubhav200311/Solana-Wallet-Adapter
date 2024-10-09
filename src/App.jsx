@@ -16,7 +16,9 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 import { AirDrop } from './AirDrop';  // Ensure that this import exists
 import { ShowSolBalance } from './GetBalance';  // Ensure that this import exists
 import { SignMessage } from './SignMessage';  // Ensure that this import exists
-
+import { SendTokens } from './sendTokens';
+import { Buffer } from 'buffer'
+window.Buffer = Buffer
 function App() {
     // Define the Solana network (you could use WalletAdapterNetwork.Mainnet for production)
     // const network = WalletAdapterNetwork.Devnet;
@@ -41,6 +43,7 @@ function App() {
                     <AirDrop></AirDrop>
                     <ShowSolBalance></ShowSolBalance>
                     <SignMessage></SignMessage>
+                    <SendTokens></SendTokens>
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
