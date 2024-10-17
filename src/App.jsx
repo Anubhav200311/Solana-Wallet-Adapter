@@ -18,6 +18,7 @@ import { ShowSolBalance } from './GetBalance';  // Ensure that this import exist
 import { SignMessage } from './SignMessage';  // Ensure that this import exists
 import { SendTokens } from './sendTokens';
 import { Buffer } from 'buffer'
+import { MetaData } from './MetaData';
 window.Buffer = Buffer
 function App() {
     // Define the Solana network (you could use WalletAdapterNetwork.Mainnet for production)
@@ -44,6 +45,7 @@ function App() {
                     <ShowSolBalance></ShowSolBalance>
                     <SignMessage></SignMessage>
                     <SendTokens></SendTokens>
+                    <MetaData></MetaData>
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>
