@@ -5,7 +5,7 @@ A lightweight and efficient wallet adapter for **Solana**, enabling seamless int
 ## 🔧 Getting Started  
 1. **CLone the Repo**
    ```sh
-   git clone https://github.com/Anubhav200311/Wallet_Adapter.git
+   git clone https://github.com/Anubhav200311/Solana-Wallet-Adapter.git
 2. **Install dependencies:**  
    ```sh
    npm install
